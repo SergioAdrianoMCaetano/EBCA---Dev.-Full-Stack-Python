@@ -1,20 +1,136 @@
-h1 {
-    color: green;
-
-}
-
-h2{
-    color: green;
-}
-
-#economia h2{
-    color: gold;
-}
-
-.creation-date{
-    color: #ccc;
-}
-
 *{
-    color: red;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body > header{
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+    
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+header li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: left;
+ 
+    
+    
+}
+
+header li a{
+    color: #f5f6fa;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    padding: auto;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img{
+    padding: 0.1rem;
+    height: 180px;
+    width: 230px;
+   /*width: 100%;*/
+}
+
+.articles article{
+    width: 50%;
+    padding: 10px;
+}
+
+section {
+    padding: 16px 0;
+
+}
+
+section h2{
+    font-size: 32px; 
+}
+
+section h2, .articles article{
+    
+    margin-bottom: 16px;
+}
+
+.articles article h3{
+    font-size: 1px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: 9px;
+    
+}
+
+.articles article a{
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+.articles article p, .articles article a{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.articles article h3{
+    font-size: 20px;
+}
+
+#esportes{
+    background-color: rgba(0, 255, 0, 0.1)
+}
+
+#esportes .articles article a{
+    background-color: #009432;
+}
+
+#economia{
+    background-color: #f8f59f;
+}
+
+#economia .articles article a{
+    background-color: #ff9f1a;
+}
+
+#entretenimento{
+    background-color: aqua;
+}
+
+#tecnologia{
+    background-color: rgb(240,128,128);
+}
+
+#tecnologia .articles article a{
+    background-color: #dc143c;
 }
